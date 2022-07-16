@@ -55,7 +55,7 @@
   }
 }
 
-.site-nav__link--current {
+.current {
   color: var(--accent-color);
   &::after {
     content: '';

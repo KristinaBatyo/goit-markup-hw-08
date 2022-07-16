@@ -127,10 +127,10 @@ body {
   color: var(--accent-color);
 }
 
-.site-nav__link--current {
+.current {
   color: var(--accent-color);
 }
-.site-nav__link--current::after {
+.current::after {
   content: "";
   position: absolute;
   left: 0;
