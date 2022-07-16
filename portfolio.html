@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
-</head>
+  </head>
 <body>
 <header class="header">
       <div class="container header__container">
@@ -37,26 +43,84 @@
             <a href="mailto:info@devstudio.com" class="site-contact__link link">
               <svg class="site-contact__icon" width="16" height="12">
                 <use class="" href="./images/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+              </svg>info@devstudio.com</a>
           </li>
 
           <li class="site-contact__item">
             <a href="tel:+380961111111" class="site-contact__link link">
               <svg class="site-contact__icon" width="10" height="16">
                 <use class="" href="./images/icon.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+            <!-------------------------------- мобільне меню -->
+        <button type="button" class="mob-menu__btn-open">
+          <svg width="40" height="40">
+            <use class="" href="./images/icon.svg#icon-menu_40px-1"></use>
+          </svg>
+       </button>
+    </div>
+
+    <div class="mob-menu is-hidden">
+      <div class="container mob-menu__container">
+
+        <div class="mob-menu--top">
+              <button type="button" class="mob-menu__btn-close">
+                <svg width="40" height="40">
+                    <use class="" href="./images/icon.svg#icon-close_40px-1"></use>
+                </svg>
+              </button>
+         
+        <ul class="mob-menu__list list">
+          <li class="mob-menu__item">
+            <a href="./index.html" class="mob-menu__link  link">Студия</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="./portfolio.html" class="mob-menu__link current link">Портфолио</a>
+          </li>
+          <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+        </ul>
+
+        </div>
+
+
+      <div class="mob-menu--bottom">
+          <ul class="mob-menu-contact__list list">
+        <li class="mob-menu-contact__item">
+          <a href="tel:+380961111111" class="mob-menu-contact__link link">+38 096 111 11 11</a>
+        </li>
+
+        <li class="mob-menu-contact__item">
+          <a href="mailto:info@devstudio.com" class="mob-menu-contact__link mob-menu-contact__link--grey link">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+     
+        <ul class="mob-menu-soc__list  list">
+          <li class="mob-menu-soc__item">
+            <a href="/" class="mob-menu-soc__link link">Instagram</a>
+          </li>
+          <li class="mob-menu-soc__item">
+            <a href="/" class="mob-menu-soc__link link">Twitter</a>
+          </li>
+          <li class="mob-menu-soc__item">
+            <a href="/" class="mob-menu-soc__link link">Facebook</a>
+          </li>
+          <li class="mob-menu-soc__item">
+            <a href="/" class="mob-menu-soc__link link">LinkedIn</a>
+          </li>
+
+        </ul>
+      </div>
+        
+    
+      </div>
+
       </div>
     </header>
-
+             <!----------- Наші роботи -->
         <section class="section works">
             <div class="container">
-            <h1 class="visually-hidden">Наши работы</h1>
             <ul class="filter list">
                 <li class="filter__item"><button type="button" class="filter__btn">Все</button></li>
                 <li class="filter__item"><button type="button" class="filter__btn">Веб-сайты</button></li>
@@ -68,26 +132,23 @@
             <ul class="works-list list">
                 <li class="works-list__item">
                     <a href="" class="works-list__link link">
-
                     <div class="works-card">
-                    <img src="./images/project-1.jpg" alt="экран с фотокарточками" width="370" height="294">
-                    <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-                        исчерпывающие сведения о компании или частном лице.</p>
-                    </div>
-                    
-                    <div class="works-card__meta">
-                    <h2 class="works-card__title">Технокряк</h2>
-                    <p class="works-card__type">Веб-сайт</p>
-                    </div>
-                    </a>
-                </li>
-                
-                <li class="works-list__item">
-    
-                    <a href="" class="works-list__link link">
-                    <div class="works-card">
-                    <img src="./images/project-2.jpg" alt="баскетболисты с мячом" width="370" height="294">
 
+                    <picture>
+                <source
+                  srcset="./images/project-2.jpg 1x, 
+                  ./images/project-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source srcset="./images/project-2-tab.jpg 1x, 
+                  ./images/project-2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                <source
+                  srcset="./images/project-2-mob.jpg 1x, 
+                  ./images/project-2-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img src="./images/project-2-mob.jpg" alt="баскетболисты" width="450" height="404" />
+              </picture>                     
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -103,7 +164,25 @@
 
                     <a href="" class="works-list__link link">
                     <div class="works-card">
-                    <img src="./images/project-3.jpg" alt="лого ресторана сифуд" width="370" height="294">
+              <picture>
+                <source
+                  srcset="./images/project-3.jpg 1x, 
+                  ./images/project-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/project-3-tab.jpg 1x, 
+                  ./images/project-3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/project-3-mob.jpg 1x, 
+                  ./images/project-3-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/project-3-mob.jpg" alt="ресторан" width="450" height="404" />
+              </picture>      
+                    
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -119,7 +198,25 @@
 
                     <a href="" class="works-list__link link">
                     <div class="works-card">
-                    <img src="./images/project-4.jpg" alt="наушники" width="370" height="294">
+              <picture>
+                <source
+                  srcset="./images/project-4.jpg 1x, 
+                  ./images/project-4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/project-4-tab.jpg 1x, 
+                  ./images/project-4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/project-4-mob.jpg 1x, 
+                  ./images/project-4-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/project-4-mob.jpg" alt="наушники" width="450" height="404" />
+              </picture>      
+
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -135,7 +232,25 @@
 
                     <a href="" class="works-list__link link">
                     <div class="works-card">
-                    <img src="./images/project-5.jpg" alt="две коробки" width="370" height="294">
+              <picture>
+                <source
+                  srcset="./images/project-5.jpg 1x, 
+                  ./images/project-5-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/project-5-tab.jpg 1x, 
+                  ./images/project-5-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/project-5-mob.jpg 1x, 
+                  ./images/project-5-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/project-5-mob.jpg" alt="коробки" width="450" height="404" />
+              </picture>      
+                   
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -150,8 +265,26 @@
                 <li class="works-list__item">
 
                     <a href="" class="works-list__link link">
+              <picture>
+                <source
+                  srcset="./images/project-6.jpg 1x, 
+                  ./images/project-6-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/project-6-tab.jpg 1x, 
+                  ./images/project-6-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/project-6-mob.jpg 1x, 
+                  ./images/project-6-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/project-6-mob.jpg" alt="монитор" width="450" height="404" />
+              </picture> 
                     <div class="works-card">
-                    <img src="./images/project-6.jpg" alt="монитор" width="370" height="294">
+                    
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -168,7 +301,24 @@
 
                     <a href="" class="works-list__link link">
                     <div class="works-card">
-                    <img src="./images/project-7.jpg" alt="журнал" width="370" height="294">
+              <picture>
+                <source
+                  srcset="./images/project-7.jpg 1x, 
+                  ./images/project-7-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/project-7-tab.jpg 1x, 
+                  ./images/project-7-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/project-7-mob.jpg 1x, 
+                  ./images/project-7-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/project-7-mob.jpg" alt="книга" width="450" height="404" />
+              </picture> 
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -184,7 +334,25 @@
 
                     <a href="" class="works-list__link link">
                     <div class="works-card">
-                    <img src="./images/project-8.jpg" alt="ярлык с надписью" width="370" height="294">
+              <picture>
+                <source
+                  srcset="./images/project-8.jpg 1x, 
+                  ./images/project-8-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/project-8-tab.jpg 1x, 
+                  ./images/project-8-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/project-8-mob.jpg 1x, 
+                  ./images/project-8-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/project-8-mob.jpg" alt="ярлык" width="450" height="404" />
+              </picture> 
+                    
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -200,7 +368,25 @@
 
                     <a href="" class="works-list__link link">
                     <div class="works-card">
-                    <img src="./images/project-9.jpg" alt="ноутбук и руки" width="370" height="294">
+              <picture>
+                <source
+                  srcset="./images/project-9.jpg 1x, 
+                  ./images/project-9-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/project-9-tab.jpg 1x, 
+                  ./images/project-9-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/project-9-mob.jpg 1x, 
+                  ./images/project-9-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/project-9-mob.jpg" alt="ноутбук" width="450" height="404" />
+              </picture> 
+                    
                     <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -215,8 +401,6 @@
             </ul>
             </div>
         </section>
-
-
     </main>
 
     <footer class="footer">
@@ -225,23 +409,15 @@
           <a href="/" class="logo footer__logo"><span class="logo__span">Web</span>Studio</a>
 
           <address>
+            <p class="footer-list__link footer-list__link--white">
+                  г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer__list list">
               <li>
-                <a
-                  href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265807,30.5361971"
-                  class="footer-list__link footer-list__link--white"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                <a href="mailto:info@example.com" class="footer-list__link link"> info@example.com</a>
               </li>
               <li>
-                <a href="mailto:info@example.com" class="footer-list__link link"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380991111111" class="footer-list__link no-margin"
-                  >+38 099 111 11 11</a
-                >
+                <a href="tel:+380991111111" class="footer-list__link no-margin">
+                  +38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -294,8 +470,7 @@
                 name="email"
                 id="email"
                 placeholder=" "
-                required
-              />
+                required/>
               <label for="email" class="footer-form__lable">E-mail</label>
             </div>
 
@@ -309,6 +484,8 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/mobile.js"></script>
 
 </body>
 </html>
