@@ -32,7 +32,7 @@
               <a href="./index.html" class="site-nav__link  link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link current link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current link">Портфолио</a>
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
           </ul>
@@ -130,6 +130,38 @@
             </ul>
 
             <ul class="works-list list">
+              <li class="works-list__item">
+                <a href="" class="works-list__link link">
+                <div class="works-card">
+              <picture>
+              <source
+                srcset="./images/project-1.jpg 1x, 
+                ./images/project-1-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/project-1-tab.jpg 1x, 
+                ./images/project-1-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/project-1-mob.jpg 1x, 
+                ./images/project-1-mob-2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/project-1-mob.jpg" alt="фотокартка" width="450" height="404" />
+            </picture>  
+                <p class="works-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                  
+                <div class="works-card__meta">
+                <h2 class="works-card__title">Технокряк</h2>
+                <p class="works-card__type">Веб-сайт</p>
+                </div>
+                </a>
+              </li>
+
                 <li class="works-list__item">
                     <a href="" class="works-list__link link">
                     <div class="works-card">
